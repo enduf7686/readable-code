@@ -116,8 +116,7 @@ public class MinesweeperGame {
                     col = 9;
                     break;
                 default:
-                    col = -1;
-                    break;
+                    throw new IllegalArgumentException("잘못된 입력입니다.");
             }
             int row = Character.getNumericValue(r) - 1;
             if (input2.equals("2")) {
